@@ -20,7 +20,7 @@
 	{
 		[[NSNotificationCenter defaultCenter] addObserver:instance
 			selector : @selector(didFinishLaunchWithOptions : )
-					   name:UIApplicationDidBecomeActiveNotification object : nil];
+					   name:UIApplicationDidFinishLaunchingNotification object : nil];
 	}
 
 	return instance;
