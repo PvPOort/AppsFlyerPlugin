@@ -52,6 +52,8 @@ static AppsFlyerEventHandler *EventHandlerStaticInitializer = [AppsFlyerEventHan
 
 	[AppsFlyerTracker sharedTracker].appsFlyerDevKey = devKey;
 	[AppsFlyerTracker sharedTracker].appleAppID = appID;
+	
+	[[AppsFlyerTracker sharedTracker] trackAppLaunch];
 }
 
 +(void) TrackEvent:(NSString*) eventName withProperies:(NSDictionary *)properties
